@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tailwind.css" rel="stylesheet">
+    <link rel="icon" href="assets/LogoDorado.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/all.min.js"></script>
+</head>
+
+<body>
+    <header class="relative w-full h-36">
+        <img src="assets/Fondo_header.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover">
+        <div
+            class="relative z-1 h-full container max-w-screen-xl mx-auto p-2 flex flex-col justify-between sm:flex-row sm:items-center">
+            <a href="index.html" class="w-36 h-30"><img src="assets/Logo.png" alt="" class="w-full h-full"></a>
+            <div class="text-white font-medium">
+                <p class=""><i class="fa-solid fa-location-dot pr-2"></i>C. Dias Romero #1370, La Paz - Bolivia</p>
+                <p class=""><i class="fa-solid fa-phone pr-2"></i>222 222 222, 222 222 222</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-gray-900 relative text-white text-2xl py-4 px-2">
+        <div class="container max-w-screen-xl mx-auto flex flex-wrap justify-between items-center">
+            <button id="btn-menu" class="px-1 pt-1 rounded-md lg:hidden"><i
+                    class="fa-solid fa-bars w-8 h-8"></i></button>
+
+            <ul class="flex flex-row gap-1 lg:order-2">
+                <a href="#"
+                    class="w-10 h-10 text-center rounded-full transition hover:bg-white hover:text-gray-900 duration-300"><i
+                        class="fa-brands fa-facebook-f p-2"></i></a>
+                <a href="https://www.youtube.com/channel/UCoPZwSoP3WqyiILInzpvIkQ"
+                    class="w-10 h-10 text-center rounded-full transition hover:bg-white hover:text-gray-900 duration-300"><i
+                        class="fa-brands fa-youtube py-2"></i></a>
+                <a href="https://twitter.com/CTV_Bolivia"
+                    class="w-10 h-10 text-center rounded-full transition hover:bg-white hover:text-gray-900 duration-300"><i
+                        class="fa-brands fa-twitter p-2"></i></a>
+                <a href="https://www.tiktok.com/@ctvbolivia?is_from_webapp=1&sender_device=pc"
+                    class="w-10 h-10 text-center rounded-full transition hover:bg-white hover:text-gray-900 duration-300"><i
+                        class="fa-brands fa-tiktok p-2"></i></a>
+            </ul>
+
+            <ul id="menu"
+                class="block w-full h-56 flex flex-col justify-evenly gap-4 hidden lg:w-auto lg:h-auto lg:block lg:order-1 lg:flex lg:flex-row">
+                <li class="text-center text-xl "><a href="quienessomos.html" class="hover:border-b-2">Quienes somos</a>
+                </li>
+                <li class="text-center text-xl"><a href="programacion.html" class="hover:border-b-2">Programación</a>
+                </li>
+                <li class="text-center text-xl"><a href="programas.html"
+                        class="border-b-2 hover:border-b-2">Programas</a></li>
+                <li class="text-center text-xl"><a href="" class="hover:border-b-2">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container max-w-screen-xl mx-auto my-6 lg:flex lg:flex-row">
+
+        <div class="m-4 lg:basis-4/6">
+
+            <div class="rounded-xl shadow-xl overflow-hidden">
+
+                <div class="tab">
+                    <ul class="flex flex-row">
+                        <li id="tab"
+                            class="grow text-center bg-gray-100 p-2 font-medium cursor-pointer text-gray-200 bg-red-700">
+                            Religiosos
+                        </li>
+                        <li id="tab" class="grow text-center bg-gray-100 p-2 font-medium cursor-pointer">Noticieros</li>
+                        <li id="tab" class="grow text-center bg-gray-100 p-2 font-medium cursor-pointer">Análisis</li>
+                        <li id="tab" class="grow text-center bg-gray-100 p-2 font-medium cursor-pointer">Familiares</li>
+                        <li id="tab" class="grow text-center bg-gray-100 p-2 font-medium cursor-pointer">Entretenimiento
+                        </li>
+                    </ul>
+
+                    <div class="tab-container text-lg">
+                        <div id="tab-content" class="block p-6 ">
+                            <div class="p-4 mb-4 shadow-xl rounded-xl border-2">
+                                <h1 class="text-3xl">SANTO ROSARIO</h1>
+                                <p class="py-2">
+                                    El Santo Rosario, rezo tradicional católico, que conmemora los veinte “misterios” de
+                                    la vida de Jesucristo y de la Virgen María, recitando después de cada uno un Padre
+                                    nuestro, diez Ave María y un gloria.
+                                </p>
+                                <br>
+                                Los Misterios del Rosario son 4:
+                                <p class="py-2">
+                                    <strong>Misterios Gozosos</strong>
+                                    (lunes y sábado) relatan la anunciación del ángel a la Virgen María y la encarnación
+                                    del Hijo de Dios, la visitación de la Virgen María a su prima Santa Isabel, el
+                                    nacimiento del Hijo de Dios, la presentación de Jesús en el Templo y el Niño Jesús
+                                    es hallado en el Templo.
+                                </p>
+                                <p class="py-2">
+                                    <strong>Misterios Luminosos</strong>
+                                    (Jueves) relatan el bautismo de Jesús en el río Jordán, la auto revelación de Jesús
+                                    en las bodas de Caná, el anuncio del Reino de Dios invitando a la conversión, la
+                                    Transfiguración de Jesús y la institución de la Eucaristía.
+                                </p>
+                                <p class="py-2">
+                                    <strong>Misterios Dolorosos</strong>
+                                    (Martes y viernes) relatan la oración de Jesús en el Huerto de los olivos, la
+                                    flagelación del Señor, la coronación de espinas, Jesús con la cruz a cuestas camino
+                                    al calvario y la Crucifixión y Muerte de Jesús.
+                                </p>
+                                <p class="py-2">
+                                    <strong>Misterios Gloriosos</strong>
+                                    ((Miércoles y domingos) relatan la resurrección del Señor, la ascensión del Señor,
+                                    la venida del Espíritu Santo sobre la Virgen María y los apóstoles, la Asunción de
+                                    Nuestra Señora a los cielos y la coronación de la Santísima Virgen como reina de
+                                    todo lo creado.
+                                </p>
+
+                                <p class="font-bold">Emisión Diaria</p>
+                                <p class=""><strong class="pr-2">Lunes a Viernes</strong>6:00</p>
+                                <p class=""><strong class="pr-2">Sábado</strong>6:30</p>
+                                <p class=""><strong class="pr-2">Domingo</strong>6:00</p>
+
+
+                            </div>
+
+                            <div class="p-4 mb-2 shadow-xl rounded-xl border-2">
+                                <h1 class="text-3xl">SANTO ROSARIO</h1>
+                                <p class="py-2">
+                                    El Santo Rosario, rezo tradicional católico, que conmemora los veinte “misterios” de
+                                    la vida de Jesucristo y de la Virgen María, recitando después de cada uno un Padre
+                                    nuestro, diez Ave María y un gloria.
+                                </p>
+                                <p class="font-bold">Emisión</p>
+                                <div class="">
+                                    <p class=""><strong class="pr-2">Lunes a Viernes</strong>6:00</p>
+                                    <p class=""><strong class="pr-2">Sábado</strong>6:30</p>
+                                    <p class=""><strong class="pr-2">Domingo</strong>6:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-content" class="block p-6 hidden">
+                            b
+                        </div>
+                        <div id="tab-content" class="block p-6 hidden">
+                            c
+                        </div>
+                        <div id="tab-content" class="block p-6 hidden">
+                            d
+                        </div>
+                        <div id="tab-content" class="block p-6 hidden">
+                            e
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="lg:basis-2/6">
+            <div class="h-72 bg-gray-200 shadow-xl p-2 lg:m-4">
+                Stream
+            </div>
+
+            <div class="flex flex-col gap-2 m-4 p-4 shadow-xl rounded-xl overflow-hidden">
+                <picture class="w-4/5 h-24 mx-auto sm:w-3/5 md:2/4 lg:4/5">
+                    <img src="assets/RP1.jpg" alt="" class="w-full h-full">
+                </picture>
+                <picture class="w-4/5 h-24 mx-auto sm:w-3/5 md:2/4 lg:4/5">
+                    <img src="assets/bot-evangelio-vida.jpg" alt="" class="w-full h-full">
+                </picture>
+                <picture class="w-4/5 h-24 mx-auto sm:w-3/5 md:2/4 lg:4/5">
+                    <img src="assets/bot-abc.jpg" alt="" class="w-full h-full">
+                </picture>
+                <picture class="w-4/5 h-24 mx-auto sm:w-3/5 md:2/4 lg:4/5">
+                    <img src="assets/Protagonistas.jpg" alt="" class="w-full h-full">
+                </picture>
+                <picture class="w-4/5 h-24 mx-auto sm:w-3/5 md:2/4 lg:4/5">
+                    <img src="assets/DXTV_logo.jpg" alt="" class="w-full h-full">
+                </picture>
+                <picture class="w-4/5 h-24 mx-auto sm:w-3/5 md:2/4 lg:4/5">
+                    <img src="assets/logo-tropicalisimo.jpg" alt="" class="w-full h-full">
+                </picture>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-200">
+        <div class="container max-w-screen-xl mx-auto flex flex-row flex-wrap items-center justify-between p-4">
+            <div class="">
+                <h3 class="font-bold text-2xl">Redes sociales</h3>
+                <a href="" class="block my-2 text-xl hover:text-rose-700"><i
+                        class="fa-brands fa-facebook-f w-6 h-6 mr-2"></i>Facebook</a>
+                <a href="" class="block my-2 text-xl hover:text-rose-700"><i
+                        class="fa-brands fa-youtube w-6 h-6 mr-2"></i>You
+                    tube</a>
+                <a href="" class="block my-2 text-xl hover:text-rose-700"><i
+                        class="fa-brands fa-twitter w-6 h-6 mr-2"></i>Twitter</a>
+                <a href="" class="block my-2 text-xl hover:text-rose-700"><i
+                        class="fa-brands fa-tiktok w-6 h-6 mr-2"></i>Tik
+                    tok</a>
+            </div>
+            <div class="w-36 h-24">
+                <img src="assets/LogoDorado.png" alt="" class="w-full h-full">
+            </div>
+        </div>
+
+        <div class="w-full text-center font-medium pb-4">
+            Copyright © 2015 · Todos los Derechos Reservados · Catolica Television
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/tabs-programas.js"></script>
+</body>
+
+</html>
