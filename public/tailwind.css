@@ -860,6 +860,10 @@ video {
   padding: 1rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -1098,6 +1102,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
   }
 }
 
