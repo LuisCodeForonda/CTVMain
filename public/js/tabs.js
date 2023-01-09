@@ -1,3 +1,5 @@
+/*
+
 const tabs = document.querySelectorAll("#tab");
 const contents = document.querySelectorAll("#tab-content");
 
@@ -16,4 +18,4 @@ tabs.forEach((tab, index) =>{
         contents[index].classList.remove("hidden");
         console.log(index);
     });
-});
+});*/
