@@ -1,6 +1,7 @@
 //variables del menu
 const boton = document.querySelector('#btn-menu');
 const menu = document.querySelector('#menu');
+const menu_items = document.querySelectorAll("#menu_item");
 
 //variables del slide
 const slideprev = document.querySelector('#prev');
@@ -16,6 +17,18 @@ boton.addEventListener('click', () => {
     menu.classList.toggle("hidden");
     boton.classList.toggle("bg-gray-300");
     boton.classList.toggle("text-gray-900");
+});
+
+//codigo de las opciones del menu
+menu_items.forEach((menu_item, index) => {
+    menu_item.addEventListener('click', () =>{
+        console.log("esta en el"+ index);
+
+        //quitar las barra inferior 
+        menu_items.forEach((tab) => tab.classList.remove("border-b-2"));
+
+        menu_item.classList.add("border-b-2");
+    });
 });
 
 
@@ -73,13 +86,10 @@ if (!(slideprev === null)) {
         }
         contadorSlide += 1;
     }
-}else{
-    console.log("no esta aqui")
 }
 
 //codigo de los tabs (pestañas)
 if(!(tabs === null)){
-    console.log("tab esta aqui");
     tabs.forEach((tab, index) =>{
         tab.addEventListener("click", () =>{
             //remover las clases activas
@@ -96,6 +106,8 @@ if(!(tabs === null)){
             console.log(index);
         });
     });
-}else{
-    console.log("tab no esta aqui");
 }
+
+/*
+3 adaptadores display port a hdmi hembra
+3 adaptadores vga hembra a hdmi macho*/
