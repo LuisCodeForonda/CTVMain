@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="tailwind.css" rel="stylesheet">
   <link rel="icon" href="assets/LogoDorado.png">
-  <!--<script src="https://cdn.tailwindcss.com"></script>-->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/all.min.js"></script>
 </head>
 
@@ -29,7 +29,8 @@
 
       <ul class="flex flex-row gap-1 md:order-2">
         <a href="#"
-          class="w-10 h-10 text-center rounded-full transition hover:bg-white hover:text-gray-900 duration-300"><i class="fa-brands fa-facebook-f py-2"></i></a>
+          class="w-10 h-10 text-center rounded-full transition hover:bg-white hover:text-gray-900 duration-300"><i
+            class="fa-brands fa-facebook-f py-2"></i></a>
         <a href="https://www.youtube.com/channel/UCoPZwSoP3WqyiILInzpvIkQ"
           class="w-10 h-10 text-center rounded-full transition hover:bg-white hover:text-gray-900 duration-300"><i
             class="fa-brands fa-youtube py-2"></i></a>
@@ -42,12 +43,21 @@
       </ul>
 
       <ul id="menu"
-        class="block w-full h-56 flex flex-col justify-evenly gap-4 hidden md:w-auto md:h-auto md:block md:order-1 md:flex md:flex-row">
-        <li class="text-center text-xl"><a id="menu_item" href="quienessomos.html" class="hover:border-b-2">Quienes somos</a></li>
-        <li class="text-center text-xl"><a id="menu_item" href="programacion.html" class="hover:border-b-2">Programación</a></li>
-        <li class="text-center text-xl"><a id="menu_item" href="programas.html" class="hover:border-b-2">Programas</a></li>
-        <li class="text-center text-xl"><a id="menu_item" href="contacto.html" class="hover:border-b-2">Contactos</a></li>
+        class="block w-full h-56 flex flex-col justify-evenly gap-1 md:gap-4 hidden md:w-auto md:h-auto md:block md:order-1 md:flex md:flex-row">
+        <li id="menu-item" class="text-center text-xl"><a href="{% url 'quienessomos' %}"
+            class="p-2 md:p-0 border-b-2 border-transparent hover:border-white">Quienes
+            somos</a></li>
+        <li id="menu-item" class="text-center text-xl"><a href="{% url 'programacion' %}"
+            class="p-2 md:p-0 border-b-2 border-transparent hover:border-white">Programación</a>
+        </li>
+        <li id="menu-item" class="text-center text-xl"><a href="{% url 'programas' %}"
+            class="p-2 md:p-0 border-b-2 border-transparent hover:border-white">Programas</a>
+        </li>
+        <li id="menu-item" class="text-center text-xl"><a href="{% url 'contactos' %}"
+            class="p-2 md:p-0 border-b-2 border-transparent hover:border-white">Contactos</a>
+        </li>
       </ul>
+
     </div>
   </nav>
 
@@ -163,4 +173,5 @@
 </body>
 
 <!--Bacareza-->
+
 </html>
